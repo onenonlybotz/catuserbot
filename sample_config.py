@@ -13,16 +13,16 @@ class Config(object):
     LOGGER = True
     # MUST NEEDED VARS
     # set this value with your name
-    ALIVE_NAME = os.environ.get("ALIVE_NAME", None)
+    ALIVE_NAME = os.environ.get("ALIVE_NAME", "BAAP AADITYA")
     # Get the values for following 2 from my.telegram.org
-    APP_ID = int(os.environ.get("APP_ID", 6))
-    API_HASH = os.environ.get("API_HASH") or None
+    APP_ID = int(os.environ.get("APP_ID", "18616080"))
+    API_HASH = os.environ.get("API_HASH", "f9996c3cf8d8eec3dd0023394a091b57") or None
     # Datbase url heroku sets it automatically else get this from elephantsql
-    DB_URI = os.environ.get("DATABASE_URL", None)
+    DB_URI = os.environ.get("DATABASE_URL", "postgres://ovkhfxkp:d6SvqcZmnYmhLQBqGVmt9AMyB0DzqXPS@isilo.db.elephantsql.com/ovkhfxkp")
     # Get this value by running python3 stringsetup.py or https://repl.it/@sandeep1709/generatestringsession
-    STRING_SESSION = os.environ.get("STRING_SESSION", None)
+    STRING_SESSION = os.environ.get("STRING_SESSION", "1BVtsOKcBu0K68Nhagu2yX3JluRyFn9vDNVX5Q8wIg__YHEmqHbTBKRMA7DFzAzJ2mU0UUyzWyNtRmL5EcFh2YO8GDYJGhapPYxb0MrJhanJXjatxafsCymJc2fv6j-bDy2Xe01xofZ-SAZs4ySEEh-hS211W4fkH6HZYNiH5U-JhA79TQdDFQwAsQVmTyVK4hR7HfwUv4AlxCBGO52Pqmva3pE36G5mGfPEcD418RMLvssIBCNiey_fluyvcXPm2Lqjw3AotcsOauDak403yu6bxn_J5jLPErcjuA8qf8ewMIT-bS_UaKjtScF8LOXYDmb7CFUU3K9VmNfy1KNr-bnoWtPSUbfo=")
     # Telegram BOT Token and bot username from @BotFather
-    TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN") or os.environ.get(
+    TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "5580584830:AAEm5Ip-H4VFN2m4AJytOLbBxai-SE2EVbM") or os.environ.get(
         "TG_BOT_TOKEN_BF_HER", None
     )
     TG_BOT_USERNAME = None
@@ -61,7 +61,7 @@ class Config(object):
     # set this with same app name you given for heroku
     HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
     # Owner id to show profile link of given id as owner
-    OWNER_ID = int(os.environ.get("OWNER_ID") or 0)
+    OWNER_ID = int(os.environ.get("OWNER_ID", "5513373412") or 0)
     # set this with group id so it keeps notifying about your tagged messages or pms
     PM_LOGGER_GROUP_ID = int(
         os.environ.get("PM_LOGGER_GROUP_ID")
